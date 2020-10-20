@@ -1,0 +1,8 @@
+// Frequency (in days) at which the package lists are refreshed.
+APT::Periodic::Update-Package-Lists "1";
+// Frequency (in days) for the downloading of the actual packages.
+APT::Periodic::Download-Upgradeable-Packages "1";
+// Frequency (in days) obsolete packages are removed from the APT cache.
+APT::Periodic::AutocleanInterval "7";
+// When enabled, the daily script will execute 'unattended-upgrade'.
+APT::Periodic::Unattended-Upgrade "1";
